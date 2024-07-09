@@ -13,8 +13,8 @@
             <table class="table table-has-many has-many-table-{{$columnClass}}">
                 <thead>
                 <tr>
-                    @foreach($headers as $header)
-                        <th>{{ $header }}</th>
+                    @foreach($headers as $key => $header)
+                        <th @if($key == 0) width="20%" @endif>{{ $header }}</th>
                     @endforeach
 
                     <th class="hidden"></th>
